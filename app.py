@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-import pickle4 as pickle
+import pickle
 import joblib
 import numpy as np
 import array
