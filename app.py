@@ -228,7 +228,7 @@ def predict():
         values = scaler.transform(values)
         features=np.array(values,dtype=object)
         print("Lohggerbkjb")
-        with open('House-price-prediction.pkl', 'rb') as file:
+        with open('./House-price-prediction.pkl', 'rb') as file:
             model = pickle.load(file)
             prediction=model.predict(features)
             return render_template('index.html', prediction_text=f'{prediction}')
